@@ -101,10 +101,10 @@ class Food:
         surface.blit(game_over_img, (200, 150))
         game_over_text = font.render("Game Over!", True, (255, 0, 0))
         score_text = font2.render(f"Your Score: {score}", True, (255, 255, 255))
-        restart_text = font3.render("Press R to Restart or Q to Quit", True, (255, 255, 255))
+        restart_text = font3.render("Press R to Restart or Q to Quit", True, ("black"))
         surface.blit(game_over_text, (250, 160))
         surface.blit(score_text, (250, 200))
-        surface.blit(restart_text, (200, 240))
+        surface.blit(restart_text, (205, 235))
         pygame.display.flip()
         time.sleep(1)
         waiting = True
@@ -162,3 +162,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
